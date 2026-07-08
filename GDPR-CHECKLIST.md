@@ -1,7 +1,7 @@
 # GDPR / Privacy Readiness Checklist
 
 For any product with EU/UK users (i.e., any public web product). Grounded in what a small SaaS
-actually needs — not enterprise-DPO theater. Items marked **[lesson]** come from the lenamaps launch.
+actually needs — not enterprise-DPO theater. Items marked **[lesson]** come from a real production launch.
 
 ## 1. Data inventory (do this first — everything else depends on it)
 

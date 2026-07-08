@@ -1,7 +1,7 @@
 # Starter — Launch Checklists
 
-Reusable checklists for taking a SaaS to production. Distilled from the lenamaps-product
-launch (live since 2026-05) — its post-launch audit, incidents, and runbooks. Copy the
+Reusable checklists for taking a SaaS to production. Distilled from a real SaaS
+launch — its post-launch audit, incidents, and runbooks. Copy the
 relevant files into a new project and work them top to bottom; items marked **[lesson]**
 trace back to a real incident or audit finding.
 

@@ -2,7 +2,7 @@
 
 Two halves: (A) securing the Google/Gmail accounts that own your infrastructure, and
 (B) making your domain's email deliverable and unspoofable. Items marked **[lesson]**
-come from the lenamaps launch.
+come from a real production launch.
 
 ## A. Lock down the Google account(s)
 

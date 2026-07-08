@@ -1,7 +1,7 @@
 # Google Setup Checklist
 
 Everything Google a SaaS launch touches: Cloud project, OAuth, Analytics, Search Console,
-service accounts. Items marked **[lesson]** come from the lenamaps launch.
+service accounts. Items marked **[lesson]** come from a real production launch.
 
 ## 1. Google Cloud project hygiene
 

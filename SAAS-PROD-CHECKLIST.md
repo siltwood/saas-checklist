@@ -1,7 +1,7 @@
 # Production SaaS Readiness Checklist
 
 A reusable, stack-agnostic checklist for taking a SaaS from "works on my machine" to production.
-Distilled from the lenamaps-product launch (live since 2026-05) — both what it did right and the
+Distilled from a real SaaS launch — both what it did right and the
 gaps found in a post-launch audit. Copy this file into any new project and work it top to bottom.
 
 Legend: items marked **[lesson]** come from a real production incident or audit finding.
@@ -77,7 +77,7 @@ Legend: items marked **[lesson]** come from a real production incident or audit 
   - [ ] dev-origin suppression (localhost/tunnels don't pollute prod error data)
 - [ ] Stale-chunk resilience: lazy imports auto-reload once on post-deploy chunk-load failure; deployed-version detector refreshes idle tabs **[lesson]**
 - [ ] 404 catch-all route (`path="*"`)
-- [ ] Bundle strategy: vendor `manualChunks`, route-level lazy loading for secondary pages, check the final bundle size (lenamaps shipped one 1.9 MB JS file — don't)
+- [ ] Bundle strategy: vendor `manualChunks`, route-level lazy loading for secondary pages, check the final bundle size (one audited app shipped a single 1.9 MB JS file — don't)
 - [ ] Large binary assets on CDN/object storage, not in `public/` (they get copied into every build)
 - [ ] SEO: title/description/canonical, full OG + Twitter card set with a real og-image, `robots.txt` **with** a `Sitemap:` directive, `sitemap.xml`, per-route meta for marketing pages
 - [ ] Favicon set complete (ico + PNG sizes + apple-touch-icon + `theme-color`)
@@ -100,7 +100,7 @@ Legend: items marked **[lesson]** come from a real production incident or audit 
 
 ## 8. Environments
 
-- [ ] **Separate dev/staging data from prod** — local dev must not point at the production database **[lesson: lenamaps dev writes to prod Supabase]**
+- [ ] **Separate dev/staging data from prod** — local dev must not point at the production database **[lesson: audited app's local dev wrote to the prod database]**
 - [ ] Dev/prod config matrix documented: env flag, keys (test vs live), debug features, what's enforced where
 - [ ] Webhook signature enforced in dev too (use `stripe listen`), so dev doesn't drift from prod behavior
 - [ ] Tunnel workflow (ngrok/cloudflared) documented for real-device testing, including known interstitial/worker gotchas

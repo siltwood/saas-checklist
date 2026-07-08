@@ -1,7 +1,7 @@
 # Cloudflare Setup Checklist
 
 DNS, TLS, WAF, Workers, R2, Access/Tunnels, logs. Items marked **[lesson]** come from the
-lenamaps launch (Workers + R2 + Access + Tunnels in production).
+running this stack (Workers + R2 + Access + Tunnels) in production.
 
 ## 1. Domain & DNS
 
